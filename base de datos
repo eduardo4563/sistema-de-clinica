@@ -1,0 +1,57 @@
+create database dbVeterinaria;
+use dbVeterinaria;
+
+
+------recepcionista
+create table recepcionista(
+id int identity(1,1) primary key not null,
+nombre varchar(100),
+apellido varchar(100),
+turno varchar(20),
+pass varchar(20));
+
+------doctor
+create table doctor(
+id int identity(1,1) primary key not null,
+nombre varchar(100),
+apellido varchar(100),
+pass varchar(20));
+
+---propietario
+create table propietario(
+id int identity(1,1) primary key not null,
+nombre varchar(100),
+apellido varchar(100),
+dni varchar(10),
+telefono varchar(10),
+direccion varchar(200));
+
+------animal
+create table animal(
+id int identity(1,1) primary key not null,
+nombre varchar(50),
+especio varchar(100),
+idPropietario int,
+foreign key (idPropietario) references propietario (id))
+
+---cita
+create table cita(
+id int identity(1,1) primary key not null,
+fechaRegistro varchar(50),
+fechaCita varchar(50),
+horaCita varchar(50),
+idAnimal int,
+idRecepcionista int,
+idDoctor int,
+foreign key (idAnimal) references animal (id),
+foreign key (idRecepcionista) references recepcionista (id),
+foreign key (idDoctor) references doctor (id),);
+
+-----atencion
+create table atencion(
+id int identity(1,1) primary key not null,
+idCita int,
+sintomas varchar(5000),
+diagnostico varchar(5000),
+tratamiento varchar(5000),
+foreign key (idCita) references cita (id));
