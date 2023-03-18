@@ -90,6 +90,7 @@ namespace CapaPresentacion
             // 
             // groupBox6
             // 
+            this.groupBox6.BackColor = System.Drawing.Color.Black;
             this.groupBox6.Controls.Add(this.btnCerrar);
             this.groupBox6.Controls.Add(this.btnEliminar);
             this.groupBox6.Controls.Add(this.btnNuevo);

@@ -52,6 +52,7 @@ namespace CapaPresentacion
             this.txtNombrePropietario = new System.Windows.Forms.TextBox();
             this.label23 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.txtlimipiae = new System.Windows.Forms.Button();
             this.groupBox6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvPropietarios)).BeginInit();
             this.groupBox5.SuspendLayout();
@@ -62,8 +63,8 @@ namespace CapaPresentacion
             this.btnBuscar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.btnBuscar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnBuscar.ForeColor = System.Drawing.Color.White;
-            this.btnBuscar.Location = new System.Drawing.Point(1029, 383);
-            this.btnBuscar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnBuscar.Location = new System.Drawing.Point(732, 427);
+            this.btnBuscar.Margin = new System.Windows.Forms.Padding(4);
             this.btnBuscar.Name = "btnBuscar";
             this.btnBuscar.Size = new System.Drawing.Size(131, 38);
             this.btnBuscar.TabIndex = 31;
@@ -74,11 +75,12 @@ namespace CapaPresentacion
             // txtValorBuscado
             // 
             this.txtValorBuscado.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtValorBuscado.Location = new System.Drawing.Point(730, 390);
-            this.txtValorBuscado.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtValorBuscado.Location = new System.Drawing.Point(732, 383);
+            this.txtValorBuscado.Margin = new System.Windows.Forms.Padding(4);
             this.txtValorBuscado.Name = "txtValorBuscado";
             this.txtValorBuscado.Size = new System.Drawing.Size(278, 24);
             this.txtValorBuscado.TabIndex = 29;
+            this.txtValorBuscado.TextChanged += new System.EventHandler(this.txtValorBuscado_TextChanged);
             // 
             // label2
             // 
@@ -87,9 +89,9 @@ namespace CapaPresentacion
             this.label2.Location = new System.Drawing.Point(727, 332);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(237, 29);
+            this.label2.Size = new System.Drawing.Size(216, 29);
             this.label2.TabIndex = 28;
-            this.label2.Text = "Buscar Propietario:";
+            this.label2.Text = "Buscar  Paciente:";
             // 
             // groupBox6
             // 
@@ -99,9 +101,9 @@ namespace CapaPresentacion
             this.groupBox6.Controls.Add(this.btnGuardar);
             this.groupBox6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox6.Location = new System.Drawing.Point(444, 63);
-            this.groupBox6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox6.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox6.Name = "groupBox6";
-            this.groupBox6.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox6.Padding = new System.Windows.Forms.Padding(4);
             this.groupBox6.Size = new System.Drawing.Size(393, 158);
             this.groupBox6.TabIndex = 30;
             this.groupBox6.TabStop = false;
@@ -113,7 +115,7 @@ namespace CapaPresentacion
             this.btnCerrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCerrar.ForeColor = System.Drawing.Color.White;
             this.btnCerrar.Location = new System.Drawing.Point(223, 91);
-            this.btnCerrar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnCerrar.Margin = new System.Windows.Forms.Padding(4);
             this.btnCerrar.Name = "btnCerrar";
             this.btnCerrar.Size = new System.Drawing.Size(123, 38);
             this.btnCerrar.TabIndex = 23;
@@ -127,7 +129,7 @@ namespace CapaPresentacion
             this.btnEliminar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEliminar.ForeColor = System.Drawing.Color.White;
             this.btnEliminar.Location = new System.Drawing.Point(223, 34);
-            this.btnEliminar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnEliminar.Margin = new System.Windows.Forms.Padding(4);
             this.btnEliminar.Name = "btnEliminar";
             this.btnEliminar.Size = new System.Drawing.Size(123, 38);
             this.btnEliminar.TabIndex = 22;
@@ -141,7 +143,7 @@ namespace CapaPresentacion
             this.btnNuevo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnNuevo.ForeColor = System.Drawing.Color.White;
             this.btnNuevo.Location = new System.Drawing.Point(32, 34);
-            this.btnNuevo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnNuevo.Margin = new System.Windows.Forms.Padding(4);
             this.btnNuevo.Name = "btnNuevo";
             this.btnNuevo.Size = new System.Drawing.Size(123, 38);
             this.btnNuevo.TabIndex = 21;
@@ -155,7 +157,7 @@ namespace CapaPresentacion
             this.btnGuardar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnGuardar.ForeColor = System.Drawing.Color.White;
             this.btnGuardar.Location = new System.Drawing.Point(32, 91);
-            this.btnGuardar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnGuardar.Margin = new System.Windows.Forms.Padding(4);
             this.btnGuardar.Name = "btnGuardar";
             this.btnGuardar.Size = new System.Drawing.Size(123, 38);
             this.btnGuardar.TabIndex = 20;
@@ -168,7 +170,7 @@ namespace CapaPresentacion
             this.dgvPropietarios.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
             this.dgvPropietarios.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvPropietarios.Location = new System.Drawing.Point(24, 332);
-            this.dgvPropietarios.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dgvPropietarios.Margin = new System.Windows.Forms.Padding(4);
             this.dgvPropietarios.Name = "dgvPropietarios";
             this.dgvPropietarios.RowHeadersWidth = 51;
             this.dgvPropietarios.Size = new System.Drawing.Size(689, 233);
@@ -191,22 +193,24 @@ namespace CapaPresentacion
             this.groupBox5.Controls.Add(this.label23);
             this.groupBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox5.Location = new System.Drawing.Point(24, 63);
-            this.groupBox5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox5.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox5.Name = "groupBox5";
-            this.groupBox5.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox5.Padding = new System.Windows.Forms.Padding(4);
             this.groupBox5.Size = new System.Drawing.Size(393, 233);
             this.groupBox5.TabIndex = 26;
             this.groupBox5.TabStop = false;
-            this.groupBox5.Text = "Datos Propietario";
+            this.groupBox5.Text = "Datos de Pacientes";
             // 
             // txtTelefonoPropietario
             // 
             this.txtTelefonoPropietario.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtTelefonoPropietario.Location = new System.Drawing.Point(101, 151);
-            this.txtTelefonoPropietario.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtTelefonoPropietario.Margin = new System.Windows.Forms.Padding(4);
+            this.txtTelefonoPropietario.MaxLength = 9;
             this.txtTelefonoPropietario.Name = "txtTelefonoPropietario";
             this.txtTelefonoPropietario.Size = new System.Drawing.Size(243, 24);
-            this.txtTelefonoPropietario.TabIndex = 21;
+            this.txtTelefonoPropietario.TabIndex = 5;
+            this.txtTelefonoPropietario.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtTelefonoPropietario_KeyPress);
             // 
             // label3
             // 
@@ -223,10 +227,10 @@ namespace CapaPresentacion
             // 
             this.txtDireccionPropietario.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtDireccionPropietario.Location = new System.Drawing.Point(101, 185);
-            this.txtDireccionPropietario.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtDireccionPropietario.Margin = new System.Windows.Forms.Padding(4);
             this.txtDireccionPropietario.Name = "txtDireccionPropietario";
             this.txtDireccionPropietario.Size = new System.Drawing.Size(243, 24);
-            this.txtDireccionPropietario.TabIndex = 19;
+            this.txtDireccionPropietario.TabIndex = 6;
             // 
             // label4
             // 
@@ -243,7 +247,7 @@ namespace CapaPresentacion
             // 
             this.txtIdPropietario.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtIdPropietario.Location = new System.Drawing.Point(101, 31);
-            this.txtIdPropietario.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtIdPropietario.Margin = new System.Windows.Forms.Padding(4);
             this.txtIdPropietario.Name = "txtIdPropietario";
             this.txtIdPropietario.ReadOnly = true;
             this.txtIdPropietario.Size = new System.Drawing.Size(56, 24);
@@ -265,10 +269,10 @@ namespace CapaPresentacion
             // 
             this.txtApellidoPropietario.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtApellidoPropietario.Location = new System.Drawing.Point(101, 94);
-            this.txtApellidoPropietario.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtApellidoPropietario.Margin = new System.Windows.Forms.Padding(4);
             this.txtApellidoPropietario.Name = "txtApellidoPropietario";
             this.txtApellidoPropietario.Size = new System.Drawing.Size(243, 24);
-            this.txtApellidoPropietario.TabIndex = 12;
+            this.txtApellidoPropietario.TabIndex = 3;
             // 
             // label19
             // 
@@ -285,10 +289,13 @@ namespace CapaPresentacion
             // 
             this.txtDniPropietario.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtDniPropietario.Location = new System.Drawing.Point(101, 121);
-            this.txtDniPropietario.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtDniPropietario.Margin = new System.Windows.Forms.Padding(4);
+            this.txtDniPropietario.MaxLength = 8;
             this.txtDniPropietario.Name = "txtDniPropietario";
             this.txtDniPropietario.Size = new System.Drawing.Size(116, 24);
-            this.txtDniPropietario.TabIndex = 5;
+            this.txtDniPropietario.TabIndex = 4;
+            this.txtDniPropietario.TextChanged += new System.EventHandler(this.txtDniPropietario_TextChanged);
+            this.txtDniPropietario.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtDniPropietario_KeyPress);
             // 
             // label22
             // 
@@ -305,7 +312,7 @@ namespace CapaPresentacion
             // 
             this.txtNombrePropietario.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtNombrePropietario.Location = new System.Drawing.Point(101, 64);
-            this.txtNombrePropietario.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtNombrePropietario.Margin = new System.Windows.Forms.Padding(4);
             this.txtNombrePropietario.Name = "txtNombrePropietario";
             this.txtNombrePropietario.Size = new System.Drawing.Size(243, 24);
             this.txtNombrePropietario.TabIndex = 2;
@@ -328,10 +335,24 @@ namespace CapaPresentacion
             this.label1.Location = new System.Drawing.Point(30, 9);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(180, 32);
+            this.label1.Size = new System.Drawing.Size(149, 32);
             this.label1.TabIndex = 25;
-            this.label1.Text = "Propietarios";
+            this.label1.Text = "Pacientes";
             this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // txtlimipiae
+            // 
+            this.txtlimipiae.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txtlimipiae.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtlimipiae.ForeColor = System.Drawing.Color.White;
+            this.txtlimipiae.Location = new System.Drawing.Point(879, 427);
+            this.txtlimipiae.Margin = new System.Windows.Forms.Padding(4);
+            this.txtlimipiae.Name = "txtlimipiae";
+            this.txtlimipiae.Size = new System.Drawing.Size(131, 38);
+            this.txtlimipiae.TabIndex = 32;
+            this.txtlimipiae.Text = "Limpiar";
+            this.txtlimipiae.UseVisualStyleBackColor = false;
+            this.txtlimipiae.Click += new System.EventHandler(this.txtlimipiae_Click);
             // 
             // PropietarioCP
             // 
@@ -339,6 +360,7 @@ namespace CapaPresentacion
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.ClientSize = new System.Drawing.Size(1233, 588);
+            this.Controls.Add(this.txtlimipiae);
             this.Controls.Add(this.btnBuscar);
             this.Controls.Add(this.txtValorBuscado);
             this.Controls.Add(this.label2);
@@ -346,7 +368,7 @@ namespace CapaPresentacion
             this.Controls.Add(this.dgvPropietarios);
             this.Controls.Add(this.groupBox5);
             this.Controls.Add(this.label1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "PropietarioCP";
             this.Text = "PropietarioCP";
             this.groupBox6.ResumeLayout(false);
@@ -383,5 +405,6 @@ namespace CapaPresentacion
         public System.Windows.Forms.TextBox txtDniPropietario;
         public System.Windows.Forms.TextBox txtNombrePropietario;
         public System.Windows.Forms.TextBox txtTelefonoPropietario;
+        private System.Windows.Forms.Button txtlimipiae;
     }
 }

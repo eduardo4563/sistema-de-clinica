@@ -246,5 +246,29 @@ namespace CapaDatos
             return nFilas;
 
         }
+        //listar
+        public DataTable listar()
+        {
+
+
+            //Crear la conexion
+            SqlConnection cnx = ConexionCD.conectarToSqlServer();
+            //Abrir la conexion
+            cnx.Open();
+
+
+
+            DataTable dt = new DataTable();
+            SqlDataAdapter da = new SqlDataAdapter("listar_propietario", cnx);
+            da.SelectCommand.CommandType = CommandType.StoredProcedure;
+            da.Fill(dt);
+
+            cnx.Close();
+            cnx.Dispose();
+            return dt;
+
+
+
+        }
     }
 }

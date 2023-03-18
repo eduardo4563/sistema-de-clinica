@@ -219,5 +219,10 @@ namespace CapaPresentacion
         {
             
         }
+
+        private void txtIdAnimal_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

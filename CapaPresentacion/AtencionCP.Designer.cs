@@ -78,6 +78,7 @@ namespace CapaPresentacion
             this.txtValorBuscado.Name = "txtValorBuscado";
             this.txtValorBuscado.Size = new System.Drawing.Size(484, 24);
             this.txtValorBuscado.TabIndex = 36;
+            this.txtValorBuscado.TextChanged += new System.EventHandler(this.txtValorBuscado_TextChanged);
             // 
             // label2
             // 
@@ -86,7 +87,7 @@ namespace CapaPresentacion
             this.label2.Location = new System.Drawing.Point(24, 313);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(163, 24);
+            this.label2.Size = new System.Drawing.Size(156, 22);
             this.label2.TabIndex = 35;
             this.label2.Text = "Buscar Atencion";
             // 
@@ -170,7 +171,7 @@ namespace CapaPresentacion
             this.dgvAtencion.Margin = new System.Windows.Forms.Padding(4);
             this.dgvAtencion.Name = "dgvAtencion";
             this.dgvAtencion.RowHeadersWidth = 51;
-            this.dgvAtencion.Size = new System.Drawing.Size(943, 233);
+            this.dgvAtencion.Size = new System.Drawing.Size(943, 256);
             this.dgvAtencion.TabIndex = 34;
             this.dgvAtencion.SelectionChanged += new System.EventHandler(this.dgvAtencion_SelectionChanged);
             // 
@@ -195,7 +196,7 @@ namespace CapaPresentacion
             this.groupBox5.Size = new System.Drawing.Size(765, 233);
             this.groupBox5.TabIndex = 33;
             this.groupBox5.TabStop = false;
-            this.groupBox5.Text = "Datos Propietario";
+            this.groupBox5.Text = "Datos del Paciente";
             // 
             // btnBuscarId
             // 
@@ -323,7 +324,7 @@ namespace CapaPresentacion
             this.label1.Location = new System.Drawing.Point(22, 21);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(331, 32);
+            this.label1.Size = new System.Drawing.Size(330, 32);
             this.label1.TabIndex = 32;
             this.label1.Text = "Formulario de Atencion";
             this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;

@@ -8,6 +8,7 @@ using System.Data.SqlClient;
 using System.Data;
 
 using CapaEntidad;
+using System.Data.Common;
 
 namespace CapaDatos
 {
@@ -227,5 +228,7 @@ namespace CapaDatos
             //Retornar la cantidad de filas afectadas
             return nFilas;
         }
+        //listar tabla
+        
     }
 }

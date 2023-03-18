@@ -24,3 +24,12 @@ C:\Users\eduar\Pictures\slnTSVeterinaria\CapaDatos\obj\Debug\CapaDatos.csproj.Co
 C:\Users\eduar\Pictures\slnTSVeterinaria\CapaDatos\obj\Debug\CapaDatos.csproj.CopyComplete
 C:\Users\eduar\Pictures\slnTSVeterinaria\CapaDatos\obj\Debug\CapaDatos.dll
 C:\Users\eduar\Pictures\slnTSVeterinaria\CapaDatos\obj\Debug\CapaDatos.pdb
+C:\Users\eduar\Pictures\vterinaria\CapaDatos\bin\Debug\CapaDatos.dll
+C:\Users\eduar\Pictures\vterinaria\CapaDatos\bin\Debug\CapaDatos.pdb
+C:\Users\eduar\Pictures\vterinaria\CapaDatos\bin\Debug\CapaEntidad.dll
+C:\Users\eduar\Pictures\vterinaria\CapaDatos\bin\Debug\CapaEntidad.pdb
+C:\Users\eduar\Pictures\vterinaria\CapaDatos\obj\Debug\CapaDatos.csproj.AssemblyReference.cache
+C:\Users\eduar\Pictures\vterinaria\CapaDatos\obj\Debug\CapaDatos.csproj.CoreCompileInputs.cache
+C:\Users\eduar\Pictures\vterinaria\CapaDatos\obj\Debug\CapaDatos.csproj.CopyComplete
+C:\Users\eduar\Pictures\vterinaria\CapaDatos\obj\Debug\CapaDatos.dll
+C:\Users\eduar\Pictures\vterinaria\CapaDatos\obj\Debug\CapaDatos.pdb

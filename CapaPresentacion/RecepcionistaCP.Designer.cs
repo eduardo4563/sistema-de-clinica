@@ -92,6 +92,7 @@ namespace CapaPresentacion
             // 
             // groupBox6
             // 
+            this.groupBox6.BackColor = System.Drawing.Color.Black;
             this.groupBox6.Controls.Add(this.btnCerrar);
             this.groupBox6.Controls.Add(this.btnEliminar);
             this.groupBox6.Controls.Add(this.btnNuevo);
@@ -308,7 +309,7 @@ namespace CapaPresentacion
             this.label1.Location = new System.Drawing.Point(12, 18);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(379, 32);
+            this.label1.Size = new System.Drawing.Size(378, 32);
             this.label1.TabIndex = 32;
             this.label1.Text = "Gestion de Recepcionistas";
             this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -333,7 +334,7 @@ namespace CapaPresentacion
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.ClientSize = new System.Drawing.Size(1166, 603);
+            this.ClientSize = new System.Drawing.Size(1166, 566);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.btnBuscar);
             this.Controls.Add(this.txtValorBuscado);

@@ -49,9 +49,9 @@ namespace CapaPresentacion
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.gestionToolStripMenuItem,
             this.iniciarSeccionToolStripMenuItem});
-            this.menuStrip1.Location = new System.Drawing.Point(1039, 0);
+            this.menuStrip1.Location = new System.Drawing.Point(1006, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(120, 711);
+            this.menuStrip1.Size = new System.Drawing.Size(153, 711);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -61,7 +61,7 @@ namespace CapaPresentacion
             this.recepcionistaToolStripMenuItem,
             this.doctorToolStripMenuItem});
             this.gestionToolStripMenuItem.Name = "gestionToolStripMenuItem";
-            this.gestionToolStripMenuItem.Size = new System.Drawing.Size(112, 24);
+            this.gestionToolStripMenuItem.Size = new System.Drawing.Size(146, 24);
             this.gestionToolStripMenuItem.Text = "Gestion";
             // 
             // recepcionistaToolStripMenuItem
@@ -83,7 +83,7 @@ namespace CapaPresentacion
             this.iniciarSeccionToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.aunteticarToolStripMenuItem});
             this.iniciarSeccionToolStripMenuItem.Name = "iniciarSeccionToolStripMenuItem";
-            this.iniciarSeccionToolStripMenuItem.Size = new System.Drawing.Size(112, 24);
+            this.iniciarSeccionToolStripMenuItem.Size = new System.Drawing.Size(146, 24);
             this.iniciarSeccionToolStripMenuItem.Text = "Iniciar seccion";
             this.iniciarSeccionToolStripMenuItem.Click += new System.EventHandler(this.iniciarSeccionToolStripMenuItem_Click);
             // 
@@ -100,7 +100,7 @@ namespace CapaPresentacion
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(0, 0);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(1039, 711);
+            this.pictureBox1.Size = new System.Drawing.Size(1006, 711);
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
             // 

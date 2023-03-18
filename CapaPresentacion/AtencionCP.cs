@@ -195,6 +195,9 @@ namespace CapaPresentacion
             this.Close();
         }
 
-        
+        private void txtValorBuscado_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

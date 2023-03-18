@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -79,6 +80,24 @@ namespace CapaNegocios
             int nFilas = propietarioCD.eliminar(idEliminar);
             //Retornar el resultado
             return nFilas;
+        }
+        //listar
+        public DataTable listar()
+        {
+            DataTable resultado = new DataTable();
+            PropietarioCD propietario = new PropietarioCD();
+
+            try
+            {
+                resultado = propietario.listar();
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+
+            return resultado;
+
         }
     }
 }
