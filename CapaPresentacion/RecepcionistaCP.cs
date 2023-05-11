@@ -182,7 +182,7 @@ namespace CapaPresentacion
 
         private void btnCerrar_Click(object sender, EventArgs e)
         {
-            id = Convert.ToInt32(dgvRecepcionistas.SelectedCells[0].Value);
+            //id = Convert.ToInt32(dgvRecepcionistas.SelectedCells[0].Value);
             this.Close();
         }
 
