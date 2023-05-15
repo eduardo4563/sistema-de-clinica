@@ -12,6 +12,8 @@ using System.Data.SqlClient;
 
 
 using CapaDatos;
+using CapaNegocios;
+using CapaEntidad;
 
 namespace CapaPresentacion
 {
@@ -48,83 +50,74 @@ namespace CapaPresentacion
 
         private void btnIngresar_Click(object sender, EventArgs e)
         {
-            //Leer los valores
+           
             string usuario = txtApellido.Text;
             string password = txtPassword.Text;
-           
 
-            if (String.IsNullOrEmpty(usuario) || String.IsNullOrEmpty(password))
+            if (usuario != "" && txtApellido.TextLength > 2)
             {
-                MessageBox.Show("Rellenar campos");
-            }
-            else
-            {
-                
-
-                SqlConnection cnx = ConexionCD.conectarToSqlServer();
-
-                //Abrir la conexion
-                cnx.Open();
-
-                //Crear el comando vinculado a la conexion
-                SqlCommand cmd = cnx.CreateCommand();
-                //Definir el Tipo de comando
-                cmd.CommandType = CommandType.Text;
-
-                //Verificar (esto puede hacerse con una consulta a la BD)
-                string autenticado = (("select * from recepcionista where apellido='" + txtApellido.Text + "'and pass='" + txtPassword.Text + "'"));
-                SqlCommand comando = new SqlCommand(autenticado, cnx);
-                SqlDataReader lector;
-                lector = comando.ExecuteReader();
-
-
-
-                if (lector.HasRows == true)
+                if (password != "")
                 {
-                    PrincipalCP frmPrincipal = new PrincipalCP();
-                    this.Hide();
-                    frmPrincipal.Show();
-                    cnx.Close();
-                }
-                else
-                {
-                    SqlConnection cnx1 = ConexionCD.conectarToSqlServer();
-
-                    //Abrir la conexion
-                    cnx1.Open();
-
-                    //Crear el comando vinculado a la conexion
-                    SqlCommand cmd1 = cnx1.CreateCommand();
-                    //Definir el Tipo de comando
-                    cmd.CommandType = CommandType.Text;
-
-                    string autenticado2 = (("select * from doctor where apellido='" + txtApellido.Text + "'and pass='" + txtPassword.Text + "'"));
-                    SqlCommand comando2 = new SqlCommand(autenticado2, cnx1);
-                    SqlDataReader lector2;
-                    lector2 = comando2.ExecuteReader();
-
-                    if (lector2.HasRows == true)
+                    Logincn usser = new Logincn();
+                     var validologin=usser.LoginUSER(usuario, password);
+                    if (validologin == true)
                     {
-                        PrincipalCP frmPrincipal = new PrincipalCP();
-                        this.Hide();
-                        frmPrincipal.Show();
-                        cnx1.Close();
+                        if (UserLogin_.possition == Posiciones.Administrator)
+                        {
+                            this.Hide();
+                            
+                            ventanacargando ve = new ventanacargando();
+                            ve.Show();
+                            
+                            administrador.Principal principal = new administrador.Principal();
+                           
+                            //sobrecargamos el formulario 
+                            principal.FormClosed += cerrarseccion;
+
+                        }
+                        if (UserLogin_.possition == Posiciones.Accounting)
+                        {
+                            this.Hide();
+                            ventanacargando ve = new ventanacargando();
+                            ve.Show();
+                            doctor dcor = new doctor();
+                            
+                            dcor.FormClosed += cerrarseccion;
+                        
+                        }
                     }
                     else
                     {
-                        MessageBox.Show("ACCESO DENEGADO, INTENTE OTRA VEZ");
-                     
-                        txtApellido.Text = "";
-                        txtApellido.Focus();
-                        //pas
-                        txtPassword.Text = "";
-                
+                        error("Credenciales Incorrectas");
+                        txtPassword.UseSystemPasswordChar = false;
+                        txtPassword.Clear();
+                        txtPassword.Focus();
+                    
                     }
-
+                }
+                else
+                {
+                    error("Introduzca su contraseña");
                 }
             }
+            else
+            {
+                error("Introduzca su nombre de usuario");
+            }
         }
-
+        private void error(string msq)
+        {
+            lblerror.Text = "" + msq;
+            lblerror.Visible = true;
+        }
+        private void cerrarseccion(object sender,FormClosedEventArgs e)
+        {
+            txtPassword.Clear();
+            txtApellido.Clear();
+            lblerror.Visible = false;
+            this.Show();
+            txtApellido.Focus();
+        }
         private void btnSalir_Click(object sender, EventArgs e)
         {
             this.Close();
@@ -132,8 +125,10 @@ namespace CapaPresentacion
 
         private void Login_Load(object sender, EventArgs e)
         {
-
+            
         }
+        
+        
         private bool mouseDown;
         private Point lastLocation;
         private void Login_MouseDown(object sender, MouseEventArgs e)

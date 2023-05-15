@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="administrador\Principal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="administrador\Principal.Designer.cs">
+      <DependentUpon>Principal.cs</DependentUpon>
+    </Compile>
     <Compile Include="AtencionCP.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -64,11 +70,29 @@
     <Compile Include="AnimalCP.Designer.cs">
       <DependentUpon>AnimalCP.cs</DependentUpon>
     </Compile>
+    <Compile Include="doctor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="doctor.Designer.cs">
+      <DependentUpon>doctor.cs</DependentUpon>
+    </Compile>
     <Compile Include="DoctorCP.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="DoctorCP.Designer.cs">
       <DependentUpon>DoctorCP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Doctor\principal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Doctor\principal.Designer.cs">
+      <DependentUpon>principal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
     <Compile Include="InicioCp.cs">
       <SubType>Form</SubType>
@@ -102,6 +126,21 @@
     <Compile Include="RecepcionistaCP.Designer.cs">
       <DependentUpon>RecepcionistaCP.cs</DependentUpon>
     </Compile>
+    <Compile Include="Recepcionista\Principal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Recepcionista\Principal.Designer.cs">
+      <DependentUpon>Principal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ventanacargando.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ventanacargando.Designer.cs">
+      <DependentUpon>ventanacargando.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="administrador\Principal.resx">
+      <DependentUpon>Principal.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="AnimalCP.resx">
       <DependentUpon>AnimalCP.cs</DependentUpon>
     </EmbeddedResource>
@@ -110,6 +149,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="CitasCP.resx">
       <DependentUpon>CitasCP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="doctor.resx">
+      <DependentUpon>doctor.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="DoctorCP.resx">
       <DependentUpon>DoctorCP.cs</DependentUpon>
@@ -132,6 +174,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="RecepcionistaCP.resx">
       <DependentUpon>RecepcionistaCP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ventanacargando.resx">
+      <DependentUpon>ventanacargando.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -160,5 +205,6 @@
       <Name>CapaNegocios</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using CapaEntidad;
+using CapaNegocios;
 
 namespace CapaPresentacion
 {
@@ -71,6 +73,51 @@ namespace CapaPresentacion
         }
 
         private void PrincipalCP_Load(object sender, EventArgs e)
+        {
+            /*seguridad();
+            permiso();*/
+
+            datauser();
+            seguridad();
+            permiso();
+        }
+        private void datauser()
+        {
+            lblnombre.Text = UserLogin_.firstname;
+            lblposiciton.Text = UserLogin_.possition;
+            lblcorreo.Text = UserLogin_.email;
+
+        }
+        //seguridad para que no haiga ataques
+        private void seguridad()
+        {
+            var userModel = new Logincn();
+            if (userModel.securidadlogin() == false)
+            {
+                MessageBox.Show("ERROR FATAL , SE DETECTO QUE ESTA INTENDO ACCEDER AL SISTEMA SIN CREDENCIALES,POE FAVOR INICIE SESIÓN E IDENTIFIQUESE");
+                Application.Exit();
+            }
+        }
+        private void permiso()
+        {
+            if (Usercache.Position==Posiciones.Accounting)
+            {
+                btnadmin.Enabled = false;
+                btnrecepcionista.Enabled = false;
+            }
+            if (Usercache.Position==Posiciones.Receptionist)
+            {
+                btnadmin.Enabled = false;
+                btndoctor.Enabled = false;  
+            }
+            if (Usercache.Position==Posiciones.Administrator)
+            {
+                btndoctor.Enabled=false;
+                btnrecepcionista.Enabled = false;
+            }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
         {
 
         }

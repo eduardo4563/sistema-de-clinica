@@ -45,6 +45,7 @@
     <Compile Include="CitasCN.cs" />
     <Compile Include="AnimalCN.cs" />
     <Compile Include="DoctorCN.cs" />
+    <Compile Include="Logincn.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="PropietarioCN.cs" />
     <Compile Include="RecepcionistaCN.cs" />

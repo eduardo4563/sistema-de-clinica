@@ -45,9 +45,12 @@
     <Compile Include="CitasCE.cs" />
     <Compile Include="AnimalCE.cs" />
     <Compile Include="DoctorCE.cs" />
+    <Compile Include="Posiciones.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="PropietarioCE.cs" />
     <Compile Include="RecepcionistaCE.cs" />
+    <Compile Include="Usercache.cs" />
+    <Compile Include="UserLogin+.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

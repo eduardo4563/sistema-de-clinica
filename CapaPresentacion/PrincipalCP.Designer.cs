@@ -37,6 +37,12 @@ namespace CapaPresentacion
             this.procesoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuCitas = new System.Windows.Forms.ToolStripMenuItem();
             this.atencionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.btndoctor = new System.Windows.Forms.Button();
+            this.btnadmin = new System.Windows.Forms.Button();
+            this.btnrecepcionista = new System.Windows.Forms.Button();
+            this.lblnombre = new System.Windows.Forms.Label();
+            this.lblposiciton = new System.Windows.Forms.Label();
+            this.lblcorreo = new System.Windows.Forms.Label();
             this.mnuPrincipal.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -107,12 +113,73 @@ namespace CapaPresentacion
             this.atencionToolStripMenuItem.Text = "Atencion";
             this.atencionToolStripMenuItem.Click += new System.EventHandler(this.atencionToolStripMenuItem_Click);
             // 
+            // btndoctor
+            // 
+            this.btndoctor.Location = new System.Drawing.Point(65, 210);
+            this.btndoctor.Name = "btndoctor";
+            this.btndoctor.Size = new System.Drawing.Size(269, 65);
+            this.btndoctor.TabIndex = 1;
+            this.btndoctor.Text = "Doctor";
+            this.btndoctor.UseVisualStyleBackColor = true;
+            this.btndoctor.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // btnadmin
+            // 
+            this.btnadmin.Location = new System.Drawing.Point(358, 210);
+            this.btnadmin.Name = "btnadmin";
+            this.btnadmin.Size = new System.Drawing.Size(269, 65);
+            this.btnadmin.TabIndex = 2;
+            this.btnadmin.Text = "admin";
+            this.btnadmin.UseVisualStyleBackColor = true;
+            // 
+            // btnrecepcionista
+            // 
+            this.btnrecepcionista.Location = new System.Drawing.Point(664, 210);
+            this.btnrecepcionista.Name = "btnrecepcionista";
+            this.btnrecepcionista.Size = new System.Drawing.Size(269, 65);
+            this.btnrecepcionista.TabIndex = 2;
+            this.btnrecepcionista.Text = "recepcionista";
+            this.btnrecepcionista.UseVisualStyleBackColor = true;
+            // 
+            // lblnombre
+            // 
+            this.lblnombre.AutoSize = true;
+            this.lblnombre.Location = new System.Drawing.Point(44, 56);
+            this.lblnombre.Name = "lblnombre";
+            this.lblnombre.Size = new System.Drawing.Size(44, 16);
+            this.lblnombre.TabIndex = 3;
+            this.lblnombre.Text = "label1";
+            // 
+            // lblposiciton
+            // 
+            this.lblposiciton.AutoSize = true;
+            this.lblposiciton.Location = new System.Drawing.Point(44, 90);
+            this.lblposiciton.Name = "lblposiciton";
+            this.lblposiciton.Size = new System.Drawing.Size(44, 16);
+            this.lblposiciton.TabIndex = 4;
+            this.lblposiciton.Text = "label2";
+            // 
+            // lblcorreo
+            // 
+            this.lblcorreo.AutoSize = true;
+            this.lblcorreo.Location = new System.Drawing.Point(44, 134);
+            this.lblcorreo.Name = "lblcorreo";
+            this.lblcorreo.Size = new System.Drawing.Size(44, 16);
+            this.lblcorreo.TabIndex = 5;
+            this.lblcorreo.Text = "label3";
+            // 
             // PrincipalCP
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(224)))), ((int)(((byte)(18)))));
             this.ClientSize = new System.Drawing.Size(1289, 743);
+            this.Controls.Add(this.lblcorreo);
+            this.Controls.Add(this.lblposiciton);
+            this.Controls.Add(this.lblnombre);
+            this.Controls.Add(this.btnrecepcionista);
+            this.Controls.Add(this.btnadmin);
+            this.Controls.Add(this.btndoctor);
             this.Controls.Add(this.mnuPrincipal);
             this.MainMenuStrip = this.mnuPrincipal;
             this.Margin = new System.Windows.Forms.Padding(4);
@@ -137,6 +204,12 @@ namespace CapaPresentacion
         private System.Windows.Forms.ToolStripMenuItem mnuAnimal;
         private System.Windows.Forms.ToolStripMenuItem atencionToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem salirToolStripMenuItem;
+        private System.Windows.Forms.Button btndoctor;
+        private System.Windows.Forms.Button btnadmin;
+        private System.Windows.Forms.Button btnrecepcionista;
+        private System.Windows.Forms.Label lblnombre;
+        private System.Windows.Forms.Label lblposiciton;
+        private System.Windows.Forms.Label lblcorreo;
     }
 }
 

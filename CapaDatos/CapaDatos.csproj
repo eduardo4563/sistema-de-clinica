@@ -46,6 +46,7 @@
     <Compile Include="CitasCD.cs" />
     <Compile Include="ConexionCD.cs" />
     <Compile Include="DoctorCD.cs" />
+    <Compile Include="logincd.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="PropietarioCD.cs" />
     <Compile Include="RecepcionistaCD.cs" />

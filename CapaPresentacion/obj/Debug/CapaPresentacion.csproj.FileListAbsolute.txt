@@ -124,3 +124,6 @@ C:\Users\eduar\Pictures\vterinaria\CapaPresentacion\obj\Debug\CapaPresentacion.c
 C:\Users\eduar\Pictures\vterinaria\CapaPresentacion\obj\Debug\CapaPresentacion.csproj.CopyComplete
 C:\Users\eduar\Pictures\vterinaria\CapaPresentacion\obj\Debug\CapaPresentacion.exe
 C:\Users\eduar\Pictures\vterinaria\CapaPresentacion\obj\Debug\CapaPresentacion.pdb
+C:\Users\eduar\Pictures\vterinaria\CapaPresentacion\obj\Debug\CapaPresentacion.doctor.resources
+C:\Users\eduar\Pictures\vterinaria\CapaPresentacion\obj\Debug\CapaPresentacion.administrador.Principal.resources
+C:\Users\eduar\Pictures\vterinaria\CapaPresentacion\obj\Debug\CapaPresentacion.ventanacargando.resources
