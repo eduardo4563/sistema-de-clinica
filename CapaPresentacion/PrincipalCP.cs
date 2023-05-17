@@ -100,7 +100,7 @@ namespace CapaPresentacion
         }
         private void permiso()
         {
-            if (Usercache.Position==Posiciones.Accounting)
+            if (Usercache.Position==Posiciones.doctor)
             {
                 btnadmin.Enabled = false;
                 btnrecepcionista.Enabled = false;

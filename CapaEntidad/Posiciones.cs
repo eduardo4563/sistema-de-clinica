@@ -11,7 +11,7 @@ namespace CapaEntidad
        
             public const string Administrator = "Administrator";
             public const string Receptionist = "Receptionist";
-            public const string Accounting = "Accounting";
+            public const string doctor = "doctor";
         
     }
 }

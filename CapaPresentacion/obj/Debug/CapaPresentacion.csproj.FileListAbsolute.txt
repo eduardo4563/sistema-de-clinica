@@ -127,3 +127,5 @@ C:\Users\eduar\Pictures\vterinaria\CapaPresentacion\obj\Debug\CapaPresentacion.p
 C:\Users\eduar\Pictures\vterinaria\CapaPresentacion\obj\Debug\CapaPresentacion.doctor.resources
 C:\Users\eduar\Pictures\vterinaria\CapaPresentacion\obj\Debug\CapaPresentacion.administrador.Principal.resources
 C:\Users\eduar\Pictures\vterinaria\CapaPresentacion\obj\Debug\CapaPresentacion.ventanacargando.resources
+C:\Users\eduar\Pictures\vterinaria\CapaPresentacion\obj\Debug\CapaPresentacion.Recepcionista.Principal.resources
+C:\Users\eduar\Pictures\vterinaria\CapaPresentacion\obj\Debug\CapaPresentacion.Doctor.principal.resources

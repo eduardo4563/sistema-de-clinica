@@ -16,5 +16,10 @@ namespace CapaPresentacion.Doctor
         {
             InitializeComponent();
         }
+
+        private void principal_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

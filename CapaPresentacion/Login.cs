@@ -75,15 +75,25 @@ namespace CapaPresentacion
                             principal.FormClosed += cerrarseccion;
 
                         }
-                        if (UserLogin_.possition == Posiciones.Accounting)
+                        if (UserLogin_.possition == Posiciones.doctor)
                         {
                             this.Hide();
                             ventanacargando ve = new ventanacargando();
                             ve.Show();
-                            doctor dcor = new doctor();
+                            Doctor.principal dcor = new Doctor.principal();
                             
                             dcor.FormClosed += cerrarseccion;
                         
+                        }
+                        if (UserLogin_.possition == Posiciones.Receptionist)
+                        {
+                            this.Hide();
+                            ventanacargando ve = new ventanacargando();
+                            ve.Show();
+                            Recepcionista.Principal dcor = new Recepcionista.Principal();
+
+                            dcor.FormClosed += cerrarseccion;
+
                         }
                     }
                     else

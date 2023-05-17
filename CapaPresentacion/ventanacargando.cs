@@ -51,11 +51,17 @@ namespace CapaPresentacion
                     
 
                 }
-                if (UserLogin_.possition == Posiciones.Accounting)
+                if (UserLogin_.possition == Posiciones.doctor)
                 {
-                    doctor dcor = new doctor();
+                    Doctor.principal dcor = new Doctor.principal();
                     dcor.Show();
                    
+                }
+                if (UserLogin_.possition == Posiciones.Receptionist)
+                {
+                    Recepcionista.Principal rece = new Recepcionista.Principal();
+                    rece.Show();
+
                 }
 
             }

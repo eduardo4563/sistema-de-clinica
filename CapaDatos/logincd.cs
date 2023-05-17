@@ -88,7 +88,7 @@ namespace CapaDatos
                 //
             }
             
-            if (Usercache.Position==Posiciones.Receptionist || Usercache.Position == Posiciones.Accounting)
+            if (Usercache.Position==Posiciones.Receptionist || Usercache.Position == Posiciones.doctor)
             {
 
              }

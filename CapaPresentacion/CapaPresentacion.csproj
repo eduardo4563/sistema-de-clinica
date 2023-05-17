@@ -156,6 +156,9 @@
     <EmbeddedResource Include="DoctorCP.resx">
       <DependentUpon>DoctorCP.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Doctor\principal.resx">
+      <DependentUpon>principal.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="InicioCp.resx">
       <DependentUpon>InicioCp.cs</DependentUpon>
     </EmbeddedResource>
@@ -174,6 +177,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="RecepcionistaCP.resx">
       <DependentUpon>RecepcionistaCP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Recepcionista\Principal.resx">
+      <DependentUpon>Principal.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ventanacargando.resx">
       <DependentUpon>ventanacargando.cs</DependentUpon>
